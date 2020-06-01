@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+li,nav{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(248, 255, 215);
+    padding: 35px 100px 0;
+}   
+nav li a:hover{
+    color: crimson;
+}
+
+header h2{
+    text-transform: uppercase;
+}
+header nav{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+header nav li{
+    margin: 0 15px;
+}
+header nav li:first-child{
+    margin-left: 0;
+}
+header nav li:last-child{
+    margin-right: 0;
+}
+@media(max-width:1000px){
+    header{
+        padding: 20px 50px;
+    }
+}
+@media(max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    header h2{
+        margin-bottom: 15px;
+    }
+    header nav li{
+        margin: 0 7px;
+    }
+}
+/*banner are*/
+
+section{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 110px 100px;
+}
+@media(max-width:1000px){
+    section{
+        padding: 100px 50px;
+    }
+}
+@media(max-width:600px){
+    section{
+        padding: 125px 30px;
+    }
+}
+section p{
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 35px;
+    padding: 0 20px;
+    line-height: 2;
+}
+.banner-area{
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    color: black;
+    text-align: center;
+}
+.banner-area .banner-img{
+    background-image: url(https://www.pxwall.com/wp-content/uploads/2018/06/Wallpaper%20moon,%20planet,%204k,%20Space%20781457775.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+}
+.banner-area h1{
+    margin-bottom: 15px;
+    font-size: 65px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.banner-area h3{
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+.banner-area a.banner-btn{
+    padding: 15px 15px;
+    background: crimson;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+@media(max-width:800px){
+    .banner-area{
+        min-height: 600px;
+    }
+    .banner-area h1{
+        font-style: 32px;
+    }
+    .banner-area h3{
+        font-style: 20px;
+    }
+    .banner-area a.banner-btn{
+        padding: 15px 40;
+    }
+}
+/*about*/
+
+ul.About-content{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.About-content li{
+    padding: 20px;
+    height: 290px;
+    background-clip: content-box;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+.About-left{
+    flex-basis: 40%;
+    background-image:url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nature-quotes-1557340276.jpg?crop=0.666xw:1.00xh;0.168xw,0&resize=640:*);
+}
+.About-right{
+    flex-basis: 60%;
+}
+.About-area p{
+    min-width: 800px;
+    margin-bottom: 35px;
+    line-height: 1.5;
+    text-align: left;
+    padding-left: 0;
+}
+.section-title{
+    text-transform: uppercase;
+    font-style: 50px;
+    margin-bottom: 5%;
+}
+.About-right h2{
+    margin-bottom: 3%;
+}
+.About-btn{
+    padding: 15px 35px;
+    background:crimson;
+    border-radius: 50px;
+    text-transform: uppercase;
+    color: #fff;
+}
+@media(max-width:1000px){
+    .About-right,
+    .About-left{
+        flex-basis: 100%;
+    }
+    .About-content li{
+        padding: 8px;
+    }
+}
+/*bog*/
+#Experience{
+    background: #ddd;
+}
+
+ul.Experience-content{
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Experience-content li{
+    padding: 0 30px;
+    flex-basis: 33%;
+    text-align: center;
+}
+.Experience-content li h4{
+    font-style: 20px;
+    margin-bottom: 25px;
+}
+.Experience-content li p{
+    margin: 0;
+}
+
+@media(max-width:1000px){
+    .Experience-content li{
+        flex-basis: 100%;
+        margin-bottom: 65px;
+    }
+    .Experience-content li:last-child{
+        margin-bottom: 0;
+    }
+    .Experience-content li p{
+        padding: 0;
+    }
+}
+/*contact*/
+#Contact{
+    background: #fff;
+}
+ul.Contact-content:hover{
+    color:red;
+}
+ul.Contact-content{
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Contact-content li{
+    padding: 0 30px;
+    flex-basis: 33%;
+    text-align: center;
+}
+.Contact-content li p{
+    margin: 0;
+}
+@media(max-width:1000px){
+    .Contact-content li{
+        flex-basis: 100%;
+        margin-bottom: 65px;
+    }
+    .Contact-content li:last-child{
+        margin-bottom: 0;
+    }
+    .Contact-content li p{
+        padding: 0;
+    }
+}
+
+footer{
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    padding: 60px;
+}
